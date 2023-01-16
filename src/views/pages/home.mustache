@@ -1,0 +1,25 @@
+{{>parcials/header}}
+
+{{#banner}}
+<section class="banner" style="background-image: url('images/{{ background }}')">{{title}}</section>
+<h2>{{title}} disponíveis para adoção.</h2>
+{{/banner}}
+{{#searchTitle}}
+<br>
+<h2>{{title}}.</h2>
+{{/searchTitle}}
+
+
+<div class="container list">
+    {{#pets}}
+    <div class="item">
+        <img src="images/{{image}}" class="item--image" />
+        <div class="item--name">{{name}}</div>
+        <div class="item--color">Cor: {{color}}</div>
+        <div class="item--genre">Gênero: {{sex}}</div>
+    </div>
+    {{/pets}}
+</div>
+
+
+{{>parcials/footer}}
