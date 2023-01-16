@@ -6,7 +6,7 @@ type pets = {
     sex: string
 };
 
-type animalsTypes = 'dog'|'cat'|'fish'
+type animalsTypes = 'dog'|'cat'|'fish';
 
 const pet: pets[] = [
     {
